@@ -2,7 +2,6 @@ define(["require", "exports", 'src/Checkout'], function(require, exports, Checko
 
     // The Checkout Kata
     //
-    // We’re going to see how far we can get in implementing a supermarket checkout that calculates the total price of a number of items.
     // In a normal supermarket, things are identified using Stock Keeping Units, or SKUs. In our store, we’ll use individual letters of
     // the alphabet (A, B, C, and so on). Our goods are priced individually.
     // In addition, some items are multipriced: buy n of them, and they’ll cost you y pounds. For example, item ‘A’ might cost 50 pounds
@@ -15,7 +14,8 @@ define(["require", "exports", 'src/Checkout'], function(require, exports, Checko
     //   C     20
     //   D     15
     //
-    // Our checkout accepts items in any order, so that if we scan a B, an A, and another B, we’ll recognize the two B’s and price them at 45 (for a total price so far of 95).
+    // Our checkout accepts items in any order, so that if we scan a B, an A, and another B, we’ll recognize the two B’s and price them
+    // at 45 (for a total price so far of 95).
 
     describe('Checkout', function () {
         var checkout;
